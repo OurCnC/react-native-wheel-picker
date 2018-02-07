@@ -1,6 +1,7 @@
 'use strict';
 
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { DatePickerIOS } from 'react-native'
 
 
@@ -10,11 +11,11 @@ export default class DatePicker extends Component {
     this.state = { date: this.props.date }
   }
   static propTypes = {
-    date: React.PropTypes.instanceOf(Date).isRequired,
-    maximumDate: React.PropTypes.instanceOf(Date),
-    minimumDate: React.PropTypes.instanceOf(Date),
-    mode: React.PropTypes.oneOf(['date', 'time', 'datetime']),
-    onDateChange: React.PropTypes.func
+    date: PropTypes.instanceOf(Date).isRequired,
+    maximumDate: PropTypes.instanceOf(Date),
+    minimumDate: PropTypes.instanceOf(Date),
+    mode: PropTypes.oneOf(['date', 'time', 'datetime']),
+    onDateChange: PropTypes.func
   }
   static defaultProps = {
     mode: 'date',
