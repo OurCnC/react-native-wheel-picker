@@ -27,8 +27,8 @@ interface DatePickerProps {
     onDateChange: Function
 }
 
-class Picker extends React.Component<PickerProps, any> {}
+declare class Picker extends React.Component<PickerProps, any> {}
 
-class DatePicker extends React.Component<DatePickerProps, any> {}
+declare class DatePicker extends React.Component<DatePickerProps, any> {}
 
 export { Picker, DatePicker };
