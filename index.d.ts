@@ -1,4 +1,4 @@
-import * as React               from 'react';
+import * as React from 'react';
 
 import { StyleProp, ViewStyle } from 'react-native';
 
@@ -20,6 +20,7 @@ interface DatePickerProps {
         month: string,
         day: string
     },
+    pickerStyle?: StyleProp<ViewStyle>,
     date?: Date,
     maximumDate?: Date,
     minimumDate?: Date,

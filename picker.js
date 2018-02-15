@@ -36,6 +36,10 @@ export default class Picker extends Component {
     pickerData: []
   }
 
+  componentWillReceiveProps(props) {
+    this.setState({ selectedValue: props.selectedValue });
+  }
+
   render() {
     const { onValueChange, pickerData, itemStyle, style, ...props } = this.props
     return (
