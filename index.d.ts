@@ -25,7 +25,8 @@ interface DatePickerProps {
     maximumDate?: Date,
     minimumDate?: Date,
     mode?: 'date' | 'time' | 'datetime',
-    onDateChange: Function
+    onDateChange: Function,
+    locale: string
 }
 
 declare class Picker extends React.Component<PickerProps, any> {}
