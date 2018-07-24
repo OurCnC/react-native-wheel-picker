@@ -15,7 +15,8 @@ export default class DatePicker extends Component {
     maximumDate: PropTypes.instanceOf(Date),
     minimumDate: PropTypes.instanceOf(Date),
     mode: PropTypes.oneOf(['date', 'time', 'datetime']),
-    onDateChange: PropTypes.func
+    onDateChange: PropTypes.func,
+    locale: PropTypes.string
   }
   static defaultProps = {
     mode: 'date',
@@ -32,6 +33,7 @@ export default class DatePicker extends Component {
             onDateChange && onDateChange(date)
           }}
           date={this.state.date}
+          locale={this.props.locale}
       />
     )
   }
